@@ -634,7 +634,30 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
+   <div id="loader">
+    <div class="loader-content">
+        <div class="loader-logo">GBD</div>
+        <h2>Ganga Building Designer</h2>
+        <div class="loading-bar">
+            <span></span>
+        </div>
+    </div>
+</div>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        },600);
+
+    },1800);
+});
+</script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
