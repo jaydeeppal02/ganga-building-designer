@@ -119,3 +119,43 @@
   });
 
 })();
+
+// Show some Drawing 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const drawingForm = document.querySelector(".drawing-form");
+  const length=document.querySelector("#drawingInputLength");
+  const width=document.querySelector("#drawingInputwidth");
+  const drawingErr=document.querySelector("#drawingErr")
+  const btn=document.querySelector(".more-drawing-btn");
+  const drawingImg=document.querySelector(".drawing-img");
+  const drawingImgh3=document.querySelector(".drawing-img h3")
+
+  drawingForm.addEventListener("submit", (e) => {
+    function drawingTime(){
+       btn.disabled.true;      
+      setTimeout(()=>{
+        btn.disabled=false;
+        drawingErr.innerHTML="";
+      },2000);
+    }
+    e.preventDefault();
+    if(length.value.trim()===""){
+      drawingErr.innerHTML="<p style='color:red;'>Please enter length!</p>"
+      drawingTime();
+      return false;
+    }
+    if((length.value>=20||length.value<=30)&&(width.value>=30||width.value<=40)){
+      drawingImgh3.innerText="hello"
+      drawingImg.innerHTML=`<img src="./assets/img/drawing1.png" alt="" class="img-fluid" width="300px">`;
+      drawingImg.innerHTML=`<img src="./assets/img/drawing1.png" alt="" class="img-fluid" width="300px">`;
+      
+
+    }
+    else{
+      console.log("hello")
+    }
+  
+   
+  });
+});
