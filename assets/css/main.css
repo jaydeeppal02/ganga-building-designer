@@ -712,7 +712,7 @@ section,
 .hero {
   width: 100%;
   position: relative;
-  padding: 120px 0 0 0;
+  padding: 70px 0 0 0;
 }
 
 .hero .container {
@@ -837,6 +837,8 @@ section,
 .hero .icon-box:hover .icon {
   color: var(--contrast-color);
 }
+.hero img{
+
 
 /*--------------------------------------------------------------
 # About Section
