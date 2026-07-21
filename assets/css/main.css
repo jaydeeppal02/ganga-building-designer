@@ -1201,7 +1201,8 @@ section,
 }
 
 .drawing-img{
-  height:500px;
+  max-height:500px;
+  min-height: 200px;
   overflow-y:auto;
   display: flex;
   flex-direction: column;
@@ -1384,6 +1385,20 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+.contact .contact-btn{
+   background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-block;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 /*--------------------------------------------------------------

@@ -363,7 +363,7 @@
         <p>Here you can see some drawing according to measuremnt</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container pb-5">
         <div class="row g-5">
         <div class="col-12 col-lg-6 drawing-content">
          <form class="drawing-form">
@@ -376,6 +376,8 @@
     <label for="drawingInputwidth" class="form-label fw-bold fs-5">Width</label>
     <input type="text" class="form-control" id="drawingInputwidth">
   </div>
+      <div id="drawingErr1" class="form-text"></div>
+
  
  <button type="submit" class="btn more-drawing-btn">View Some Drawing <i
                 class="bi bi-arrow-right"></i></button>
@@ -502,34 +504,34 @@
           </div>
 
           <div class="col-lg-8">
-            <form  class="php-email-form" data-aos="fade-up"
+            <form  class="contact-form" data-aos="fade-up"
               data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6 ">
-                  <input type="text" name="name" class="form-control rounded-2" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control contact-name rounded-2" placeholder="Your Name" required="">
                   
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control  rounded-2" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control contact-email  rounded-2" name="email" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control  rounded-2" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control contact-subject rounded-2" name="subject" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control  rounded-2" name="message" rows="6" placeholder="Message"
+                  <textarea class="form-control contact-msg rounded-2" name="message" rows="6" placeholder="Message"
                     required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <!-- <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" class="btn contact-btn">Send Message </button>
                 </div>
 
               </div>
@@ -597,6 +599,17 @@
     },1800);
 });
 </script> -->
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+<script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "8n1IMn-5p_9w45cjY",
+        });
+      })();
+    </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
