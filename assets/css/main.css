@@ -838,6 +838,8 @@ section,
   color: var(--contrast-color);
 }
 .hero img{
+  transform: scale(1.3);
+}
 
 
 /*--------------------------------------------------------------
