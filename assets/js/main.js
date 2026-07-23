@@ -171,7 +171,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="./assets/img/drawing1.png" alt="" class="img-fluid" width="300px">
       `;
     } else {
-      console.log("hello");
+      // alert("we have no any drawing")
+      drawingImgh3.innerText="we have no any drawing";
     }
   });
 });
