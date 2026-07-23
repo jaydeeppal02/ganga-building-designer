@@ -972,6 +972,12 @@ section,
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 } */
 
+.hero .btn-seeSite{
+  background:inherit;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
 
 .services .more-service-btn {
   background: var(--accent-color);
